@@ -35,6 +35,16 @@ class ArticlesController < ApplicationController
     end
   end
 
+  def destroy
+    article = Article.find(params[:id])
+    if article.destroy!
+      redirect_to root_path, status: :see_other, notice: '削除に成功しました'
+    else
+      flash.now[:error] = '削除できませんでした'
+      render :show, status: :unprocessable_entity
+    end
+  end
+
   private
   def article_params
     params.require(:article).permit(:title, :content)
