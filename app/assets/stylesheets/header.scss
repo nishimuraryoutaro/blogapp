@@ -4,6 +4,10 @@ $avatar-size: 40px;
 $header-padding-y: 16px;
 $back-icon-size: 16px;
 
+a {
+    color: white;
+  }
+
 .header {
   display: flex;
   justify-content: space-between;
