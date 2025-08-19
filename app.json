@@ -6,7 +6,7 @@
   "repository": "https://github.com/nishimuraryoutaro/blogapp",
   "env": {},
   "addons": [
-    "heroku-postgresql:hobby-dev"
+  "heroku-postgresql:essential-0"
   ],
   "buildpacks": [{
     "url": "heroku/nodejs"
