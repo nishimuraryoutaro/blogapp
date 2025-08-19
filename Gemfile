@@ -5,7 +5,7 @@ gem 'rails', '~> 7.2.2', '>= 7.2.2.2'
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '>= 1.4'
+gem 'pg', '>= 0.18', '< 2.0'
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '>= 5.0'
 # Bundle and transpile JavaScript [https://github.com/rails/jsbundling-rails]
@@ -22,6 +22,7 @@ gem 'annotate'
 gem 'devise'
 gem 'faker'
 gem 'hamlit'
+gem 'aws-sdk-s3', require: false
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
@@ -45,6 +46,7 @@ group :development, :test do
   gem 'brakeman', require: false
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
+  gem 'dotenv-rails'
   gem 'rubocop-rails-omakase', require: false
 end
 
