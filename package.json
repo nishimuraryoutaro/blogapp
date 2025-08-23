@@ -1,8 +1,10 @@
 {
   "name": "app",
+  "version": "1.0.0",
   "private": true,
+  "license": "MIT",
   "devDependencies": {
-    "webpack": "^5.101.2",
+    "webpack": "^5.101.3",
     "webpack-cli": "^6.0.1"
   },
   "scripts": {
@@ -10,6 +12,9 @@
   },
   "dependencies": {
     "@hotwired/stimulus": "^3.2.2",
-    "@hotwired/turbo-rails": "^8.0.16"
+    "@hotwired/turbo-rails": "^8.0.16",
+    "@rails/actiontext": "^8.0.201",
+    "@rails/webpacker": "^5.4.4",
+    "trix": "^2.1.15"
   }
 }
