@@ -5,7 +5,8 @@
   "license": "MIT",
   "devDependencies": {
     "webpack": "^5.101.3",
-    "webpack-cli": "^6.0.1"
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
   },
   "scripts": {
     "build": "webpack --config webpack.config.js"
@@ -15,6 +16,7 @@
     "@hotwired/turbo-rails": "^8.0.16",
     "@rails/actiontext": "^8.0.201",
     "@rails/webpacker": "^5.4.4",
+    "jquery": "^3.7.1",
     "trix": "^2.1.15"
   }
 }

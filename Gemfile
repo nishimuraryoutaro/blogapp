@@ -25,7 +25,6 @@ gem 'faker'
 gem 'hamlit'
 gem 'mini_magick'
 gem 'psych', '~> 3.1'
-gem 'webpacker', '~> 4.0', '>= 4.0.7'
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
@@ -65,5 +64,6 @@ group :test do
   gem 'selenium-webdriver'
 end
 
-gem 'active_decorator'gem 'sassc-rails'
+gem 'active_decorator'
+gem 'sassc-rails'
 
