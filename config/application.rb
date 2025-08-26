@@ -13,7 +13,7 @@ module Blog
 
     if Rails.env.development? || Rails.env.test?
       Bundler.require(*Rails.groups)
-      Dotenv::Railtie.load
+      Dotenv::Rails.load
     end
 
     # Please, add to the `ignore` list any other `lib` subdirectories that do
@@ -32,5 +32,6 @@ module Blog
     config.i18n.default_locale = :ja
 
     config.active_storage.variant_processor = :mini_magick
+    config.active_job.queue_adapter = :sidekiq
   end
 end
