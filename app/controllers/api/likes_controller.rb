@@ -1,4 +1,4 @@
-class LikesController < Api::ApplicationController
+class Api::LikesController < Api::ApplicationController
   before_action :authenticate_user!
 
   def create
